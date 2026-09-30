@@ -2,8 +2,8 @@ name: Scheduled Practice
 
 on:
   schedule:
-    - cron: "55 11 * * *"
-    - cron: "00 12 * * *"
+    - cron: "20 12 * * *"
+    - cron: "30 12 * * *"
 
 jobs:
   scheduled-test:
