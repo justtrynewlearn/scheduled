@@ -2,8 +2,8 @@ name: Scheduled Practice
 
 on:
   schedule:
-    - cron: "*/1 * * * *"
-    - cron: "*/2 * * * *"
+    - cron: "1 * * * *"
+    - cron: "2 * * * *"
 
   workflow_dispatch:
 
