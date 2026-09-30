@@ -2,10 +2,8 @@ name: Scheduled Practice
 
 on:
   schedule:
-    - cron: "40 11 * * *"
-    - cron: "45 11 * * *"
-
-  workflow_dispatch:
+    - cron: "55 11 * * *"
+    - cron: "00 12 * * *"
 
 jobs:
   scheduled-test:
