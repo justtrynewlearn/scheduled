@@ -1,0 +1,24 @@
+name: Scheduled Practice
+
+on:
+  schedule:
+    - cron: "*/1 * * * *"
+    - cron: "*/2 * * * *"
+
+  workflow_dispatch:
+
+jobs:
+  scheduled-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show trigger information
+        run: |
+          echo "Event: ${{ github.event_name }}"
+          echo "Schedule: ${{ github.event.schedule }}"
+
+      - name: Show current time
+        run: date -u
+
+      - name: Test completed
+        run: echo "Scheduled test completed successfully"
